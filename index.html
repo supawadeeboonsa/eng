@@ -58,7 +58,7 @@
 
         h1 {
             color: #2d3748;
-            font-size: 3em;
+            font-size: 2em;
             text-align: center;
             margin-bottom: 30px;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
@@ -382,7 +382,7 @@
 
         <!-- Slide 1: Title -->
         <div class="slide active intro-slide">
-            <h1>DIY Eco-friendly Air Purifier</h1>
+            <h1>Smart air purifier with smartphone control</h1>
             <p class="intro-subtitle">Using Recycled Materials for Better Air Quality</p>
             <div class="eco-icon">🌱</div>
             <p style="font-size: 1.3em; color: #4a5568; margin-top: 20px;">
@@ -647,8 +647,8 @@
             </div>
         </div>
 
-        <!-- Slide 8: Member 6 -->
-        <div class="slide conclusion-slide">
+       <!-- Slide 8: Member 6 -->
+        <div class="slide">
             <h2>Final Testing & Presentation</h2>
             <div class="member-section">
                 <div class="member-title">
@@ -666,16 +666,52 @@
                     </div>
                 </div>
             </div>
-            <div class="success-icon">✅</div>
-            <h3 style="color: #48bb78; margin-top: 20px;">Project Successfully Completed!</h3>
+            <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                <div class="success-icon justify-content">✅</div>
+                <h3 style="color: #48bb78; margin-top: 20px;">Project Successfully Completed!</h3>
+            </div>
         </div>
-    </div>
 
-    <div class="controls">
-        <button class="control-btn" id="prev-btn" onclick="previousSlide()">◀ Previous</button>
-        <button class="control-btn" id="next-btn" onclick="nextSlide()">Next ▶</button>
-    </div>
-
+        <!-- Slide 9: Final Product -->
+        <div class="slide conclusion-slide">
+            <h2>Our Final Product</h2>
+            <div style="display: flex; justify-content: center; align-items: center; margin: 40px 0; flex-wrap: wrap; gap: 40px;">
+                <div style="flex: 1; max-width: 400px; text-align: center;">
+                    <img src="/imge/Gemini_Generated_Image_j6v0jzj6v0jzj6v0.png" 
+                         alt="DIY Air Purifier" 
+                         style="width: 100%; height: auto; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.2); background: linear-gradient(135deg, #f0f0f0, #e0e0e0); object-fit: cover;" />
+                </div>
+                <div style="flex: 1; max-width: 400px;">
+                    <div style="background: white; padding: 30px; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1);">
+                        <h3 style="color: #667eea; margin-bottom: 20px; text-align: center;">🌟 Smart Features</h3>
+                        <div style="margin: 15px 0; padding: 10px; background: #f8f9fa; border-radius: 8px;">
+                            <strong>📱 Mobile App Control</strong><br>
+                            Real-time air quality monitoring
+                        </div>
+                        <div style="margin: 15px 0; padding: 10px; background: #f8f9fa; border-radius: 8px;">
+                            <strong>♻️ Eco-Friendly Design</strong><br>
+                            Made from 100% recycled materials
+                        </div>
+                        <div style="margin: 15px 0; padding: 10px; background: #f8f9fa; border-radius: 8px;">
+                            <strong>🤖 Auto-Adjustment</strong><br>
+                            Smart fan speed based on air quality
+                        </div>
+                        <div style="margin: 15px 0; padding: 10px; background: #f8f9fa; border-radius: 8px;">
+                            <strong>💡 Energy Efficient</strong><br>
+                            Low power consumption design
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="background: linear-gradient(135deg, #48bb78, #38a169); color: white; padding: 30px; border-radius: 20px; margin: 30px 0; text-align: center;">
+                <h3 style="margin-bottom: 15px;">🌍 Environmental Impact</h3>
+                <p style="font-size: 1.2em; line-height: 1.6;">
+                    Our DIY Air Purifier not only improves indoor air quality but also contributes to environmental sustainability by reusing waste materials and reducing electronic waste.
+                </p>
+            </div>
+            <div class="success-icon">🎉</div>
+            <h3 style="color: #48bb78; margin-top: 20px;">Thank You for Your Attention!</h3>
+        </div>
     <script>
         let currentSlide = 0;
         const slides = document.querySelectorAll('.slide');
